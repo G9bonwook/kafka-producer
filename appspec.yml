@@ -1,4 +1,4 @@
-# version 명시는 필수. 현재는 0.0만 가능함.
+# version 명시는 필수. 현재는 0.0만 가능함!
 # os: 배포할 서버의 OS, Linux와 Windows 가능
 version: 0.0
 os: linux

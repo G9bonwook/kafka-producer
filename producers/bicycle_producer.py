@@ -27,7 +27,8 @@ class BicycleProducer():
         """
         self.topic = topic
         # Kafka Producer 설정 (브로커 서버 목록)
-        self.conf = {'bootstrap.servers': BROKER_LST}
+        self.conf = {'bootstrap.servers': BROKER_LST, 
+                      'compression.type': 'lz4' }
         self.producer = Producer(self.conf)
         self._set_logger()
 
